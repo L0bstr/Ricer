@@ -9,3 +9,26 @@ Linux rice manager utility.
 A "rice" is a customized Linux desktop. Its config files end up scattered across `~/.config`, `/etc` and dotfiles in `$HOME`, and moving a setup to a new machine means copying them by hand and remembering which packages they need.
 
 Ricer groups those files into self-contained **modules** (for example `waybar` or `kitty`) and manages them from one place, so a setup can be synced, applied and reinstalled without the manual work.
+
+## Concept
+
+```
+  System files                  Ricer modules
+  ------------                  -------------
+  ~/.config/waybar/   <--+--->  modules/waybar/files/
+  ~/.config/kitty/    <--+--->  modules/kitty/files/
+  ~/.zshrc            <--+--->  modules/zsh/files/
+                         |
+                  sync (system -> module)
+                  apply (module -> system)
+```
+
+## Commands
+
+| Command   | What it will do                                  | Status  |
+|-----------|--------------------------------------------------|---------|
+| `module`  | Create and manage modules                        | planned |
+| `sync`    | Copy current system files into a module          | planned |
+| `apply`   | Put a module's files in place on the system      | planned |
+| `install` | Install the packages and deps a module needs     | planned |
+| `run`     | Run a module's setup steps                       | planned |
