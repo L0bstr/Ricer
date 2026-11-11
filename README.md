@@ -26,15 +26,19 @@ flowchart TD
 
 ## Module layout (planned)
 
-Layout is a draft and may change as the tool takes shape.
+A suggested standard for how a module can be laid out. The `desktop` module below is one possible solution; the final structure is up to the module's creator.
 
 ```
 modules/
-└── waybar/
-    ├── files/        # config files, mirroring their system paths
-    ├── manifest      # where each file goes, plus metadata
-    ├── install.sh    # installs packages the module needs
-    └── setup.sh      # post-apply steps (reload, enable services)
+└── desktop/
+    ├── deps/
+    │   ├── pacman.txt
+    │   └── module.txt
+    ├── configs/
+    │   ├── hyprland/
+    │   ├── hyprpicker/
+    │   └── .../
+    └── desktop.sh
 ```
 
 ## Contributing
