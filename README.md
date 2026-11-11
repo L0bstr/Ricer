@@ -43,4 +43,4 @@ modules/
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) (coming soon).
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the workflow.
