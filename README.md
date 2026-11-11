@@ -6,15 +6,12 @@ Ricer is a script utility that provides a personal organization of grouped Linux
 
 ## Concept
 
-```
-  System files                  Ricer modules
-  ------------                  -------------
-  ~/.config/waybar/   <--+--->  modules/waybar/files/
-  ~/.config/kitty/    <--+--->  modules/kitty/files/
-  ~/.zshrc            <--+--->  modules/zsh/files/
-                         |
-                  sync (system -> module)
-                  apply (module -> system)
+```mermaid
+flowchart TD
+    Ricer --> Module
+    Module --> Dependencies
+    Module --> Configs["Configs (dotfiles)"]
+    Module --> Scripts
 ```
 
 ## Commands
