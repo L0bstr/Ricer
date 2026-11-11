@@ -2,11 +2,7 @@
 
 Linux rice manager utility.
 
-## Why
-
-A "rice" is a customized Linux desktop. Its config files end up scattered across `~/.config`, `/etc` and dotfiles in `$HOME`, and moving a setup to a new machine means copying them by hand and remembering which packages they need.
-
-Ricer groups those files into self-contained **modules** (for example `waybar` or `kitty`) and manages them from one place, so a setup can be synced, applied and reinstalled without the manual work.
+Ricer is a script utility that provides a personal organization of grouped Linux dotfiles and scripts (modules) for management functionality like install, config, etc. How things are grouped depends on the user and the creator of the module.
 
 ## Concept
 
